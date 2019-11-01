@@ -1,0 +1,39 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <link rel="stylesheet" type="text/css" href="#{navigationController.applicationUrl}css/travel-creation.css"/>
+    <link rel="stylesheet" type="text/css" href="#{navigationController.applicationUrl}css/common.css"/>
+    <script src="https://www.paypal.com/sdk/js?client-id=#{applicationManagement.ppToken}"></script>
+</h:head>
+<h:body>
+
+    <div style="margin-left: 20%; margin-top: 150px">
+        <h:panelGrid columns="2" cellpadding="5">
+            <p:outputLabel value="Application:" />
+            <p:outputLabel value="#{sessionManagement.appName}" />
+            <p:outputLabel value="Transaction value:" />
+            <p:outputLabel value=" #{sessionManagement.value}" />
+        </h:panelGrid>
+        <div style="alignment: center">
+            <div id="paypal-button-container"></div>
+        </div>
+        <a href="#{navigationController.applicationUrl}confirmation">PAY</a>
+    </div>
+
+    <script>
+        paypal.Buttons({
+            createOrder: function(data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: '0.01'
+                        }
+                    }]
+                });
+            }
+        }).render('#paypal-button-container');
+    </script>
+
+</h:body>
+</html>
