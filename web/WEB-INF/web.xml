@@ -17,17 +17,17 @@
     <env-entry>
         <env-entry-name>db-user</env-entry-name>
         <env-entry-type>java.lang.String</env-entry-type>
-        <env-entry-value>root</env-entry-value>
+        <env-entry-value></env-entry-value>
     </env-entry>
     <env-entry>
         <env-entry-name>db-password</env-entry-name>
         <env-entry-type>java.lang.String</env-entry-type>
-        <env-entry-value>0000</env-entry-value>
+        <env-entry-value></env-entry-value>
     </env-entry>
     <env-entry>
         <env-entry-name>db-url</env-entry-name>
         <env-entry-type>java.lang.String</env-entry-type>
-        <env-entry-value>//localhost:3306/ppm</env-entry-value>
+        <env-entry-value></env-entry-value>
     </env-entry>
 
     <!-- *** Network Parameters *** -->
@@ -35,17 +35,17 @@
     <env-entry>
         <env-entry-name>nk-db-user</env-entry-name>
         <env-entry-type>java.lang.String</env-entry-type>
-        <env-entry-value>root</env-entry-value>
+        <env-entry-value></env-entry-value>
     </env-entry>
     <env-entry>
         <env-entry-name>nk-db-password</env-entry-name>
         <env-entry-type>java.lang.String</env-entry-type>
-        <env-entry-value>0000</env-entry-value>
+        <env-entry-value></env-entry-value>
     </env-entry>
     <env-entry>
         <env-entry-name>nk-db-url</env-entry-name>
         <env-entry-type>java.lang.String</env-entry-type>
-        <env-entry-value>//localhost:3306/network</env-entry-value>
+        <env-entry-value></env-entry-value>
     </env-entry>
 
     <!-- *** PayPal Parameters *** -->
@@ -53,17 +53,17 @@
     <env-entry>
         <env-entry-name>pp-token</env-entry-name>
         <env-entry-type>java.lang.String</env-entry-type>
-        <env-entry-value>ASpZBn8uIQ9TrB5GAl8k0qJsRS0yyk9Qv68vA621CdNtdcfxYZKAZZTcGaPaYuzbmCbXLuAwyh7HzUah</env-entry-value>
+        <env-entry-value></env-entry-value>
     </env-entry>
     <env-entry>
         <env-entry-name>pp-url</env-entry-name>
         <env-entry-type>java.lang.String</env-entry-type>
-        <env-entry-value>https://www.sandbox.paypal.com/cgi-bin/websrc</env-entry-value>
+        <env-entry-value></env-entry-value>
     </env-entry>
     <env-entry>
         <env-entry-name>pp-email</env-entry-name>
         <env-entry-type>java.lang.String</env-entry-type>
-        <env-entry-value>sb-lrxb7447862@personal.example.com</env-entry-value>
+        <env-entry-value></env-entry-value>
     </env-entry>
 
     <!-- *** RabbitMQ Parameters *** -->
@@ -71,17 +71,17 @@
     <env-entry>
         <env-entry-name>rabbitMQ-host</env-entry-name>
         <env-entry-type>java.lang.String</env-entry-type>
-        <env-entry-value>localhost</env-entry-value>
+        <env-entry-value></env-entry-value>
     </env-entry>
     <env-entry>
         <env-entry-name>rabbitMQ-user</env-entry-name>
         <env-entry-type>java.lang.String</env-entry-type>
-        <env-entry-value>guest</env-entry-value>
+        <env-entry-value></env-entry-value>
     </env-entry>
     <env-entry>
         <env-entry-name>rabbitMQ-password</env-entry-name>
         <env-entry-type>java.lang.String</env-entry-type>
-        <env-entry-value>guest</env-entry-value>
+        <env-entry-value></env-entry-value>
     </env-entry>
 
     <!-- *** Logger Parameters *** -->
@@ -89,12 +89,12 @@
     <env-entry>
         <env-entry-name>rabbitMQ-exchange-logger</env-entry-name>
         <env-entry-type>java.lang.String</env-entry-type>
-        <env-entry-value>PPM-LOGGER</env-entry-value>
+        <env-entry-value></env-entry-value>
     </env-entry>
     <env-entry>
         <env-entry-name>rabbitMQ-routingKey-logger</env-entry-name>
         <env-entry-type>java.lang.String</env-entry-type>
-        <env-entry-value>*</env-entry-value>
+        <env-entry-value></env-entry-value>
     </env-entry>
     <env-entry>
         <env-entry-name>log-path</env-entry-name>
