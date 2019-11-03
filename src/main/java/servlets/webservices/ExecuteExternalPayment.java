@@ -1,9 +1,10 @@
 package servlets.webservices;
 
 import beans.entities.OutTransaction;
+import com.github.ffcfalcos.commonwebservice.handler.AbstractWebservice;
 import managers.OutTransactionManagerInterface;
 import managers.PayPalManagerInterface;
-import models.external.NetworkDaoInterface;
+import models.external.ApplicationDaoInterface;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
@@ -11,6 +12,7 @@ import javax.inject.Inject;
 import javax.servlet.annotation.WebServlet;
 
 @WebServlet(name = "api-execute-external-payment", urlPatterns = "/api/execute-external-payment")
+@SuppressWarnings("unchecked")
 public class ExecuteExternalPayment extends AbstractWebservice {
 
     @Inject
@@ -18,7 +20,12 @@ public class ExecuteExternalPayment extends AbstractWebservice {
     @Inject
     private PayPalManagerInterface payPalManager;
     @Inject
-    private NetworkDaoInterface networkDao;
+    private ApplicationDaoInterface networkDao;
+
+    @Override
+    protected void handleGet(JSONObject jsonRequest, JSONObject jsonResponse) throws Exception {
+        jsonResponse.put("message", "This webservice doesn't handle GET request");
+    }
 
     @Override
     protected void handlePost(JSONObject jsonRequest, JSONObject jsonResponse) throws Exception {

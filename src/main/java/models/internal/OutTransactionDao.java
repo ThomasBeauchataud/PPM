@@ -1,7 +1,7 @@
-package models;
+package models.internal;
 
 import beans.entities.OutTransaction;
-import models.common.CommonDao;
+import com.github.ffcfalcos.commondao.ApplicationDao;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Default;
@@ -12,7 +12,7 @@ import java.util.List;
 
 @Default
 @ApplicationScoped
-public class OutTransactionDao extends CommonDao<OutTransaction> implements OutTransactionDaoInterface, Serializable {
+public class OutTransactionDao extends ApplicationDao<OutTransaction> implements OutTransactionDaoInterface, Serializable {
 
     @Override
     protected OutTransaction generateEntity(ResultSet resultSet) throws SQLException {

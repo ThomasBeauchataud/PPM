@@ -1,7 +1,7 @@
-package models;
+package models.internal;
 
 import beans.entities.IncTransaction;
-import models.common.CommonDao;
+import com.github.ffcfalcos.commondao.ApplicationDao;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Default;
@@ -11,7 +11,7 @@ import java.util.List;
 
 @Default
 @ApplicationScoped
-public class IncTransactionDao extends CommonDao<IncTransaction> implements IncTransactionDaoInterface {
+public class IncTransactionDao extends ApplicationDao<IncTransaction> implements IncTransactionDaoInterface {
 
     @Override
     protected IncTransaction generateEntity(ResultSet resultSet) throws SQLException {

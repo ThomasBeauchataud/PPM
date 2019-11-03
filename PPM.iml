@@ -25,8 +25,11 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: com.github.ffcfalcos:webservice-manager:2.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.github.ffcfalcos:logger-manager:2.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.rabbitmq:amqp-client:5.7.3" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.26" level="project" />
+    <orderEntry type="library" name="Maven: com.github.ffcfalcos:common-dao:2.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.1" level="project" />
     <orderEntry type="library" name="Maven: commons-logging:commons-logging:1.2" level="project" />

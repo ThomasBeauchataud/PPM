@@ -1,7 +1,7 @@
-package models;
+package models.internal;
 
 import beans.entities.OutTransaction;
-import models.common.CommonDaoInterface;
+import com.github.ffcfalcos.commondao.CommonDaoInterface;
 
 public interface OutTransactionDaoInterface extends CommonDaoInterface<OutTransaction> {
 

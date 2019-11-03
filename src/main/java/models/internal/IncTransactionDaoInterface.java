@@ -1,7 +1,7 @@
-package models;
+package models.internal;
 
 import beans.entities.IncTransaction;
-import models.common.CommonDaoInterface;
+import com.github.ffcfalcos.commondao.CommonDaoInterface;
 
 public interface IncTransactionDaoInterface extends CommonDaoInterface<IncTransaction> {
 

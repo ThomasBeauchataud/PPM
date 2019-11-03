@@ -1,6 +1,6 @@
 package models.external;
 
-public interface NetworkDaoInterface {
+public interface ApplicationDaoInterface {
 
     /**
      * Update a Token for an Application

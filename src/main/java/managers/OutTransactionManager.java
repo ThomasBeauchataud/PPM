@@ -1,7 +1,7 @@
 package managers;
 
 import beans.entities.OutTransaction;
-import models.OutTransactionDaoInterface;
+import models.internal.OutTransactionDaoInterface;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Default;

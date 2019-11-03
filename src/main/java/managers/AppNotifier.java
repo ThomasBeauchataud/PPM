@@ -1,7 +1,8 @@
 package managers;
 
 import beans.common.SessionManagementInterface;
-import common.webservice.WebserviceCallerInterface;
+import com.github.ffcfalcos.commonwebservice.caller.WebserviceCaller;
+import com.github.ffcfalcos.commonwebservice.caller.WebserviceCallerInterface;
 import org.json.simple.JSONObject;
 
 import javax.enterprise.context.ApplicationScoped;
